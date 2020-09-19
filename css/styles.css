@@ -860,6 +860,7 @@ img {
 	width: 16px;
 	height: 15px;
 	border: 2px solid var(--secondary-text-color);
+	background-color: var(--primary-white-color);
 	border-radius: 2px;
 	margin-right: 8px;
 }
@@ -870,6 +871,8 @@ img {
 	background-image: url("../images/check-on.svg");
 	background-size: contain;
 	background-origin: border-box;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-modal .button {
