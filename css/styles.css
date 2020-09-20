@@ -829,8 +829,6 @@ img {
 }
 
 .label.policy {
-	display: flex;
-	align-items: center;
 	margin-bottom: 0;
 	margin-right: auto;
 	margin-left: auto;
@@ -857,12 +855,14 @@ img {
 
 .label.policy .icon-box {
 	display: inline-block;
+	vertical-align: text-top;
 	width: 16px;
 	height: 15px;
+
+	border-radius: 2px;
+	margin-right: 4px;
 	border: 2px solid var(--secondary-text-color);
 	background-color: var(--primary-white-color);
-	border-radius: 2px;
-	margin-right: 8px;
 }
 
 .input-check:checked + .icon-box {
@@ -876,10 +876,10 @@ img {
 }
 
 .form-modal .button {
-	padding: 10px 55px;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+	padding: 10px 55px;
 }
 
 .form-modal .button:hover,
